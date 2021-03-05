@@ -1,0 +1,96 @@
+:root {
+  --main-color: #feae47;
+  --black: #434852;
+  --lightblue: #56bde6;
+  --white: #fff;
+  --font-size: 16px;
+}
+
+html {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  font-size: var(--font-size);
+  scroll-behavior: smooth;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  overflow: hidden;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  background-color: var(--main-color);
+  height: 4rem;
+  width: 100%;
+  position: sticky;
+  top: 0;
+}
+
+header h1 {
+  margin: auto;
+}
+
+#menu {
+  margin-right: 1.5rem;
+  cursor: pointer;
+}
+
+main section {
+  text-align: center;
+  height: 600px;
+  z-index: 1;
+  margin-top: 1rem;
+}
+
+.panel {
+  width: 100%;
+  min-height: 100vh;
+  position: absolute;
+  z-index: 0;
+  background-color: rgba(0, 0, 0, 0.97);
+}
+
+.no-visible {
+  visibility: hidden;
+}
+
+.panel nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+  position: absolute;
+}
+
+.panel a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 5rem;
+  padding: 1rem;
+  text-decoration: none;
+  font-weight: bold;
+  color: var(--white);
+}
+
+.panel a:hover {
+  background-color: var(--lightblue);
+}
