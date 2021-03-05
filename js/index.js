@@ -1,7 +1,6 @@
-const $menuLink = document.getElementById("menu"),
-  $panel = document.querySelector(".panel"),
-  $icon = document.querySelector(".fa-bars");
+import hamburgerMenu from "./dom/menu-hamburger.js";
+const d = document;
 
-$menuLink.addEventListener("click", (e) => {
-  $panel.classList.toggle("no-visible");
+d.addEventListener("DOMContentLoaded", (e) => {
+  hamburgerMenu(".menu-btn", ".panel", "nav a", ".menu-btn i");
 });
