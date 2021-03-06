@@ -44,6 +44,8 @@ header h1 {
   text-align: center;
 }
 
+/* --- 1. Menu hamburguesa ---*/
+
 .menu-btn {
   position: fixed;
   z-index: 5;
@@ -111,4 +113,33 @@ header h1 {
   background-color: var(--main-color);
   font-weight: bold;
   color: #000;
+}
+
+/* --- 2. Reloj y alarma ---*/
+
+.btn-reloj {
+  padding: 0.8rem;
+  margin: 0.5rem;
+  background-color: var(--main-color);
+  color: #000;
+  border: 0;
+  border-radius: 8px;
+  text-align: center;
+  font-size: var(--font-size);
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+#reloj {
+  font-size: 4rem;
+  display: none;
+}
+
+#reloj.visible {
+  display: block;
+}
+
+:disabled {
+  opacity: 0.5;
+  cursor: default;
 }
