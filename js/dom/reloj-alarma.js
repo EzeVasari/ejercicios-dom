@@ -6,14 +6,16 @@ export default function relojAlarma(clock, clockBtn, alarmBtn, alarmAudio) {
       d.querySelector(clock).classList.toggle("visible");
 
       let $relojBtn = d.querySelector(clockBtn);
+      let clockTempo;
 
       if ($relojBtn.textContent == "Iniciar reloj") {
         $relojBtn.textContent = "Detener reloj";
       } else {
+        clearInterval(clockTempo);
         $relojBtn.textContent = "Iniciar reloj";
       }
 
-      setInterval(() => {
+      clockTempo = setInterval(() => {
         d.querySelector(clock).textContent = new Date().toLocaleTimeString();
       }, 0);
     }
