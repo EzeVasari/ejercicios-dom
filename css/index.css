@@ -159,3 +159,12 @@ header h1 {
   border-radius: 50%;
   background-color: var(--main-color);
 }
+
+/* --- 4. Cuenta regresiva ---*/
+
+input[type="date"] {
+  margin: 0.5rem;
+  padding: 0.5rem;
+  font-size: var(--font-size);
+  border-radius: 8px;
+}
