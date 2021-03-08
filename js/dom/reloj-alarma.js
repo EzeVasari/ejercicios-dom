@@ -20,11 +20,14 @@ export default function relojAlarma(clock, clockBtn, alarmBtn, alarmAudio) {
       }, 0);
     }
 
+    const $alarm = d.querySelector(alarmAudio);
+
     if (e.target.matches(alarmBtn)) {
-      if (d.querySelector(alarmAudio).paused) {
-        d.querySelector(alarmAudio).play();
+      if ($alarm.paused) {
+        $alarm.play();
       } else {
-        d.querySelector(alarmAudio).pause();
+        $alarm.pause();
+        $alarm.currentTime = 0;
       }
 
       let $alarmBtn = d.querySelector(alarmBtn);
