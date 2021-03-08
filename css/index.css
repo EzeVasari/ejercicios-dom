@@ -143,3 +143,19 @@ header h1 {
   opacity: 0.5;
   cursor: default;
 }
+
+/* --- 3. Eventos de teclado ---*/
+
+.stage {
+  display: flex;
+  min-height: 60vh;
+  background-color: #282828;
+}
+
+.ball {
+  margin: auto;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  background-color: var(--main-color);
+}
